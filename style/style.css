@@ -1,0 +1,152 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #000000;
+}
+
+.link_active {
+    color: #9b4e9b;
+    text-shadow: 1px 2px 1px #000000;
+}
+
+a, p {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: #ced2d3;
+}
+
+.txtsobre {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.fone{
+    color: #470242;
+    font-weight: bold;
+}
+
+.email {
+    color: #470242;
+    font-weight: bold;
+}
+
+.email:hover,
+.fone:hover{
+    color: #662c62;
+}
+
+h1 {
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+strong {
+    color: #470242;
+}
+
+.logo_sobre {
+    width: 60px;
+    filter: invert(1);
+    transition: 1s;
+    transform: translateX(0px) scale(0.5);
+}
+/*Animação icones expandindo*/
+.logo_sobre:hover {
+    transform: translateZ(50px) scale(1.0);
+}
+
+a:hover {
+    color: #757075;
+    cursor: pointer;
+}
+
+.img_perfil {
+    border-radius: 50%;
+    max-block-size: 200px;
+    border: #584158 8px solid;
+}
+
+.first {
+    display: flex;
+}
+
+.cont1 {
+    background-color: #470242;
+    width: 400px;
+    height: 81vh;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.cont2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+    color: #ced2d3;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 100px;
+    animation: go-back 2s; 
+}
+
+.cont2_1 {
+    display: flex;
+    align-items: stretch;
+    background-color: #000000;
+    color: #ced2d3;
+    width: 100vw;
+    padding-left: 100px;
+    animation: go-back 2s;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Faz animação na DIV cont2*/
+@keyframes go-back {
+    from {
+        transform: translateY(100vw);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 32px;
+    font-size: 20px;
+}
+
+.conhecimentos {
+    display: flex;
+    font-size: 30px;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 90px;
+}
+
+.conhecimentos_li {
+    vertical-align: top;
+    text-align: justify;
+}
+
+.conhecimentos_li::marker {
+    font-size: 25px;
+}
+
+.logo_list {
+    width: 30px;
+}
