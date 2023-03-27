@@ -2,6 +2,8 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 body{
     background: #000000;
@@ -13,8 +15,7 @@ body{
 }
 
 a, p {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+    
     color: #ced2d3;
 }
 
@@ -39,9 +40,7 @@ a, p {
 
 h1 {
     display: inline;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 60px;
 }
 
@@ -134,13 +133,16 @@ nav {
     font-size: 30px;
     align-items: self-start;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     padding-top: 90px;
 }
 
 .conhecimentos_li {
     vertical-align: top;
+    display: flex;
     text-align: justify;
+    gap: 15px;
+    font-style: normal;
 }
 
 .conhecimentos_li::marker {
@@ -151,3 +153,21 @@ nav {
     width: 20px;
 }
 
+.li_objetivos {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.titulo {
+    display: flex;
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 60px;
+}
